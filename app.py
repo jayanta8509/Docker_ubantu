@@ -38,7 +38,7 @@ class ChatResponse(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Chat API is running. Use POST /chat to ask questions."}
+    return {"message": "Chat API is running. Use POST /chat to ask questions.and"}
 
 
 @app.post("/chat", response_model=ChatResponse)
