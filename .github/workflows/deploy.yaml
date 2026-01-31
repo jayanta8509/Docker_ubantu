@@ -20,6 +20,6 @@ jobs:
           username: root
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/docker/htdocs/docker.almlengineer.cloud/Docker_ubantu
+            cd /home/almlengineer-docker/htdocs/docker.almlengineer.cloud/Docker_ubantu
             git pull
             docker compose up -d --build
